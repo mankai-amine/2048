@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <div class="modal-overlay"></div>
     <div class="container">
         <header class="score-container">
+            <div id="winModal" style="display: none; background: #333; color: white; padding: 20px; border-radius: 5px;">
+                Congratulations... You won!!!
+            </div>
             <div>
                 Score: <span id="score">0</span>
             </div>
@@ -48,6 +52,6 @@
 
     
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/2048.js"></script>
+    <script src="/app.js"></script>
 </body>
 </html>
