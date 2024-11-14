@@ -42,7 +42,7 @@ header {
 }
 
 
-#winModal {
+#winModal, #loseModal  {
     display: none; 
     position: fixed; 
     left: 50%;

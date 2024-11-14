@@ -49,8 +49,15 @@ $(document).ready(function(){
         // check if the game is over
         if (isGameOver()){
             setTimeout( function(){
-                alert("Game over!")
+                $(".modal-overlay").show();
+                $("#loseModal").show();
             }, 1000);
+
+            // Close modal if the user clicks on overlay
+            $(".modal-overlay").on("click", function() {
+                $(this).hide();
+                $("#loseModal").hide();
+            });
         } 
     });
 
